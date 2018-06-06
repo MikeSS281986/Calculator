@@ -22,30 +22,30 @@
         <div id="button-container">
           <tr id="row1">
             <td><input type="button" class="first-row" name="clear" value="c" onclick="reset()"></td>
-            <td><input type="button" class="first-row" name="square" value="&#8730" onclick="calculator.display.value += '&#8730'"></td>
-            <td><input type="button" class="first-row" name="division" value="/" onclick="calculator.display.value += '/'"></td>
-            <td><input type="button" class="first-row" name="multiply" value="*" onclick="calculator.display.value += '*'"></td>
+            <td><input type="button" class="first-row" name="square" value="&#8730" onclick="calculator.display.value = Math.sqrt(calculator.display.value)" disabled></td>
+            <td><input type="button" class="first-row" name="division" value="/" onclick="calculator.display.value += '/'" disabled></td>
+            <td><input type="button" class="first-row" name="multiply" value="*" onclick="calculator.display.value += '*'" disabled></td>
           </tr>
           <tr id="row2">
-            <td><input type="button" class="second-row" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-            <td><input type="button" class="second-row" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-            <td><input type="button" class="second-row" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-            <td><input type="button" class="second-row" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            <td><input type="button" class="second-row" name="seven" value="7" onclick="calculator.display.value += '7'" disabled></td>
+            <td><input type="button" class="second-row" name="eight" value="8" onclick="calculator.display.value += '8'" disabled></td>
+            <td><input type="button" class="second-row" name="nine" value="9" onclick="calculator.display.value += '9'" disabled></td>
+            <td><input type="button" class="second-row" name="minus" value="-" onclick="calculator.display.value += '-'" disabled></td>
           </tr>
           <tr id="row3">
-            <td><input type="button" class="third-row" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-            <td><input type="button" class="third-row" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-            <td><input type="button" class="third-row" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-            <td><input type="button" class="third-row" name="add" value="+" onclick="calculator.display.value += '+'"></td>
+            <td><input type="button" class="third-row" name="four" value="4" onclick="calculator.display.value += '4'" disabled></td>
+            <td><input type="button" class="third-row" name="five" value="5" onclick="calculator.display.value += '5'" disabled></td>
+            <td><input type="button" class="third-row" name="six" value="6" onclick="calculator.display.value += '6'" disabled></td>
+            <td><input type="button" class="third-row" name="add" value="+" onclick="calculator.display.value += '+'" disabled></td>
           </tr>
           <tr id="row4">
-            <td><input type="button" class="fourth-row" name="one" value="1" onclick="calculator.display.value += '1'"></td>
-            <td><input type="button" class="fourth-row" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-            <td><input type="button" class="fourth-row" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+            <td><input type="button" class="fourth-row" name="one" value="1" onclick="calculator.display.value += '1'" disabled></td>
+            <td><input type="button" class="fourth-row" name="two" value="2" onclick="calculator.display.value += '2'" disabled></td>
+            <td><input type="button" class="fourth-row" name="three" value="3" onclick="calculator.display.value += '3'" disabled></td>
           </tr>
           <tr id="row5">
-            <td><input type="button" id="zero" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
-            <td><input type="button" class="fifth-row" name="decimal" value="." onclick="calculator.display.value += '.'"></td>
+            <td><input type="button" id="zero" name="zero" value="0" onclick="calculator.display.value += '0'" disabled></td>
+            <td><input type="button" class="fifth-row" name="decimal" value="." onclick="calculator.display.value += '.'" disabled></td>
           </tr>
           <td><input type="button" id="equal-button" name="equal" value="=" onclick="calculator.display.value = Math.floor(eval(calculator.display.value))"></td>
         </div>
